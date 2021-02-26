@@ -49,7 +49,7 @@ def main():
         #         print(link)
         # appending business URL extracted
         Data_Frame = Data_Frame.append({'Business_links': link}, ignore_index=True, sort=False)
-        Data_Frame
+        # Data_Frame
     Data_Frame.to_csv('Business_links.csv', mode='a', header=False)
     return 0
 
