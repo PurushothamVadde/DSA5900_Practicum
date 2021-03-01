@@ -8,7 +8,7 @@ import json
 ####################Function to Get Customer Reviews#############################
 def Customer_Review_Data(Review_div, Data):
     # Intializing the customer features
-    Customer_friends_count = 0
+    Customer_Friends_count = 0
     Customer_Reviews_count = 0
     Customer_Photos_count = 0
 
@@ -241,7 +241,7 @@ def Restaurant_Data(soup, Data, link, Data_Frame):
     else:
         Restaurant_Photos_Count = 'Null'
 
-    if (Restaurant_class.find('span', class_=Data['R_Claim'])):
+    if Restaurant_class.find('span', class_=Data['R_Claim']):
         # Restaurant Claimed Status
         Restaurant_Claim_status = (Restaurant_class.find('span', class_=Data['R_Claim']).text).strip()
     else:
@@ -311,16 +311,16 @@ Business_links = Business_links.tolist()
 
 
 # creating  a Data frame to save data
-Data_Frame = pd.DataFrame(columns=['Restaurant_Name','Restaurant_Address','Restaurant_ReviewCount',
-                                   'Restaurant_Rating','Restaurant_Photos_Count','Restaurant_Timings',
-                                   'Restaurant_Claim_status','Restaurant_Dollars','Restaurant_Food_Type',
-                                   'Restaurant_Delivery_price','Restaurant_Delivey_Time',
-                                   'Customer_Name','Customer_Friends_count','Customer_Reviews_count',
-                                   'Customer_Photos_count','Customer_Elite','Customer_Elite_Year',
-                                   'Customer_Rating','Customer_Review','Customer_Review_Date',
-                                   'Customer_Review_Uploaded_Photos','Customer_Review_Useful',
-                                   'Customer_Review_Funny','Customer_Review_Cool','Business_response_By',
-                                   'Business_response_Date','Business_Response_for_Review','Business_Response'])
+Data_Frame = pd.DataFrame(columns=['Restaurant_Name', 'Restaurant_Address', 'Restaurant_ReviewCount',
+                                   'Restaurant_Rating', 'Restaurant_Photos_Count', 'Restaurant_Timings',
+                                   'Restaurant_Claim_status', 'Restaurant_Dollars', 'Restaurant_Food_Type',
+                                   'Restaurant_Delivery_price', 'Restaurant_Delivey_Time',
+                                   'Customer_Name', 'Customer_Friends_count', 'Customer_Reviews_count',
+                                   'Customer_Photos_count', 'Customer_Elite', 'Customer_Elite_Year',
+                                   'Customer_Rating', 'Customer_Review', 'Customer_Review_Date',
+                                   'Customer_Review_Uploaded_Photos', 'Customer_Review_Useful',
+                                   'Customer_Review_Funny','Customer_Review_Cool', 'Business_response_By',
+                                   'Business_response_Date','Business_Response_for_Review', 'Business_Response'])
 # Creating a CSV file with headers to save data
 Data_Frame.to_csv('Yelp_Business_Reviews.csv', header=True)
 
