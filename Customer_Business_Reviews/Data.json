@@ -1,0 +1,32 @@
+{
+  "B_R_by": "text__373c0__2Kxyz text-color--black-extra-light__373c0__2OyzO text-align--left__373c0__2XGa-",
+  "B_R_Check": "arrange__373c0__2C9bH gutter-auto__373c0__1Ep_j border-color--default__373c0__3-ifU",
+  "B_R_Class": "margin-t3__373c0__1l90z border-color--default__373c0__3-ifU",
+  "B_R_Date": "text__373c0__2Kxyz text-color--subtle__373c0__3DZpi text-align--left__373c0__2XGa-",
+  "B_Response": "text__373c0__2Kxyz comment__373c0__1AmP0 truncated__373c0__E6j__ text-color--normal__373c0__3xep9 text-align--left__373c0__2XGa-",
+  "C_Data": "user-passport-stats__373c0__2LjLz border-color--default__373c0__3-ifU",
+  "C_Elite": "text__373c0__2Kxyz text__373c0__vcN1K text-color--white__373c0__22aE8 text-align--left__373c0__2XGa-",
+  "C_Name": "user-passport-info border-color--default__373c0__3-ifU",
+  "C_R_Date": "arrange__373c0__2C9bH gutter-1__373c0__2l5bx vertical-align-middle__373c0__1SDTo border-color--default__373c0__3-ifU",
+  "C_R_Photos": "text__373c0__2Kxyz text-color--black-regular__373c0__2vGEn text-align--left__373c0__2XGa- text-weight--semibold__373c0__2l0fe text-size--small__373c0__3NVWO",
+  "C_Rating": "^i-stars__373c0__1BRrc i-stars",
+  "C_Review": "text__373c0__2Kxyz comment__373c0__1M-px text-color--normal__373c0__3xep9 text-align--left__373c0__2XGa-",
+  "Like_Category": "display--inline__373c0__3JqBP border-color--default__373c0__3-ifU",
+  "Like_class": "arrange__373c0__2C9bH vertical-align-middle__373c0__1SDTo border-color--default__373c0__3-ifU",
+  "R_Address": "address",
+  "R_Claim": "text__373c0__2Kxyz claim-text--light__373c0__1ip1u text-color--blue-regular__373c0__QFzix text-align--left__373c0__2XGa- text-weight--semibold__373c0__2l0fe text-bullet--after__373c0__3fS1Z text-size--large__373c0__3t60B",
+  "R_class": "photo-header-content-container__373c0__2SmKC border-color--default__373c0__3-ifU",
+  "R_Delivery_class": "platform-widget",
+  "R_Delivery_Price": "attribute__373c0__2s0Cb display--inline-block__373c0__1ZKqC padding-r2__373c0__28zpp border-color--default__373c0__3-ifU",
+  "R_Delivery_Time": "attribute__373c0__2s0Cb display--inline-block__373c0__1ZKqC padding-l2__373c0__1Dr82 border--left__373c0__d1B7K border-color--default__373c0__3-ifU",
+  "R_Dollar": "text__373c0__2Kxyz text-color--white__373c0__22aE8 text-align--left__373c0__2XGa- text-weight--semibold__373c0__2l0fe text-bullet--after__373c0__3fS1Z text-size--large__373c0__3t60B",
+  "R_Food_type": "link__373c0__1G70M link-color--inherit__373c0__3dzpk link-size--inherit__373c0__1VFlE",
+  "R_Name": "heading--h1__373c0__dvYgw undefined heading--inline__373c0__10ozy",
+  "R_photos": "text__373c0__2Kxyz button-content-text__373c0__Z-7FO text-color--inherit__373c0__1lczC text-align--center__373c0__3VrfZ text-weight--semibold__373c0__2l0fe text-size--large__373c0__3t60B text--truncated__373c0__3sLaf",
+  "R_Rating": "^i-stars__373c0__1BRrc i-stars",
+  "R_Review": "text__373c0__2Kxyz text-color--white__373c0__22aE8 text-align--left__373c0__2XGa- text-weight--semibold__373c0__2l0fe text-size--large__373c0__3t60B",
+  "R_Timings": "display--inline__373c0__3JqBP margin-l1__373c0__1khIQ border-color--default__373c0__3-ifU",
+  "Reviews_Div": "review__373c0__13kpL border-color--default__373c0__3-ifU"
+}
+
+
