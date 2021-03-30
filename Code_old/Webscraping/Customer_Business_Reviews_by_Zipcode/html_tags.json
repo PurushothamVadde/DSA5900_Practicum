@@ -1,0 +1,33 @@
+{
+  "B_Address": "address",
+  "B_Claim": "claim-text--dark__373c0__xRoSM css-df2qti",
+  "B_class": "arrange-unit__373c0__o3tjT arrange-unit-grid-column--8__373c0__2dUx_ padding-r2__373c0__28zpp border-color--default__373c0__3-ifU",
+  "B_Name": "css-11q1g5y",
+  "B_photos": "text__373c0__2Kxyz button-content-text__373c0__Z-7FO text-color--inherit__373c0__1lczC text-align--center__373c0__3VrfZ text-weight--semibold__373c0__2l0fe text-size--large__373c0__3t60B text--truncated__373c0__3sLaf",
+  "B_R_by": "css-e81eai",
+  "B_R_Check": "arrange__373c0__2C9bH gutter-auto__373c0__1Ep_j border-color--default__373c0__3-ifU",
+  "B_R_Class": "margin-t3__373c0__1l90z border-color--default__373c0__3-ifU",
+  "B_R_Date": "margin-b1__373c0__1khoT border-color--default__373c0__3-ifU",
+  "B_Rating": "^i-stars__373c0__1BRrc i-stars",
+  "B_Response": "comment__373c0__1AmP0 truncated__373c0__E6j__ css-n6i4z7",
+  "B_Response_Class": "arrange__373c0__2C9bH margin-t2__373c0__1CFWK margin-b1__373c0__1khoT border-color--default__373c0__3-ifU text-align--center__373c0__2n2yQ",
+  "B_Response_Rate": "margin-b1__373c0__1khoT border-color--default__373c0__3-ifU",
+  "B_Response_Time": "arrange-unit__373c0__o3tjT border-color--default__373c0__3-ifU",
+  "B_Response_text_class": "css-emkdw6",
+  "B_Review": "css-1h1j0y3",
+  "B_Timings": "display--inline__373c0__3JqBP margin-l1__373c0__1khIQ border-color--default__373c0__3-ifU",
+  "C_Data": "user-passport-stats__373c0__2LjLz border-color--default__373c0__3-ifU",
+  "C_Elite": "text__373c0__vcN1K css-1hx6l2b",
+  "C_Name": "fs-block css-m6anxm",
+  "C_R_Date": "arrange__373c0__2C9bH gutter-1__373c0__2l5bx vertical-align-middle__373c0__1SDTo border-color--default__373c0__3-ifU",
+  "C_R_Photos": "css-1x0u7iy",
+  "C_Rating": "^i-stars__373c0__1BRrc i-stars",
+  "C_Review": "comment__373c0__1M-px css-n6i4z7",
+  "Like_Category": "display--inline__373c0__3JqBP border-color--default__373c0__3-ifU",
+  "Like_class": "arrange__373c0__2C9bH vertical-align-middle__373c0__1SDTo border-color--default__373c0__3-ifU",
+  "R_Dollar": "text__373c0__2Kxyz text-color--white__373c0__22aE8 text-align--left__373c0__2XGa- text-weight--semibold__373c0__2l0fe text-bullet--after__373c0__3fS1Z text-size--large__373c0__3t60B",
+  "R_Food_type": "link__373c0__1G70M link-color--inherit__373c0__3dzpk link-size--inherit__373c0__1VFlE",
+  "Reviews_Div": "review__373c0__13kpL border-color--default__373c0__3-ifU"
+}
+
+
