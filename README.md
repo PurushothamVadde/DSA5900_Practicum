@@ -316,7 +316,7 @@ _Table 4: Models Performance comparison 1_
 
 We used the SMOTE oversampling method, in which we created synthetic data points to balance the data set. After oversampling, the dataset became balanced, and we were able to obtain the following results using the models as shown in Table 5. All the models performed better with a balanced dataset. We plot the ROC curve to verify the model performance of a balanced dataset, and we got the model accuracy as 0.91 and AU ROC value as 0.96 for the random forest.
 
-|**Model |Precision |Recall |F1-Score| Accuracy |AU ROC**|
+|**Model |Precision |Recall |F1-Score| Accuracy |AU ROC|
 |:-------|:---------|:------|:-------|:---------|:--------|
 |RandomForest_SMOTE |0.97 |0.84 |0.90 |0.91| 0.96|
 |Gradient_Boosting_SMOTE| 0.98 |0.78 |0.87| 0.88| 0.94|
