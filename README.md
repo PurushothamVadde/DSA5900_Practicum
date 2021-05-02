@@ -270,7 +270,7 @@ We need to see the PR curve to evaluate the model trained with an imbalanced dat
 
 **4.4 Important features:**
 
-![](RackMultipart20210502-4-8sl7tn_html_1c0a216a989c3862.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/imp%20features.png)
 
 Fig 9 Important features in the model
 
@@ -282,7 +282,7 @@ SMOTE (synthetic Minority Oversampling TEchnique) consists of synthesizing eleme
 
 In the Fig 10 we can see that synthetic samples are created for the minority class by using the k- nearest neighbors&#39; algorithm.
 
-![](RackMultipart20210502-4-8sl7tn_html_94e8e286a8dc66e9.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/smote.png)
 
 _Fig 10: Oversampling with SMOTE_
 
@@ -292,15 +292,11 @@ The minority class 1 sample will become equivalent to the majority class after o
 
 We obtained the following model results by applying ensemble algorithms to the above oversampled dataset.
 
-Model precision recall f1-score Accuracy
-
----------------------------------------------------------------
-
-Random Forest 0.93 0.89 0.91 0.91
-
-XGBoost 0.94 0.86 0.90 0.90
-
-Gradient Boosting 0.88 0.79 0.83 0.84
+|Model| precision| recall| f1-score| Accuracy|
+|:-----|:-----------|:----|:-------|:--------|
+|Random Forest |0.93 |0.89 |0.91| 0.91|
+|XGBoost |0.94| 0.86| 0.90| 0.90|
+|Gradient Boosting| 0.88 |0.79| 0.83 |0.84|
 
 _Table 3: Models performance with Oversampling Smote data._
 
@@ -310,29 +306,21 @@ From the Table 3 we can see all model&#39;s performance and their results for ra
 
 Table 4 shows how the models compare in terms of performance. For Random forest, we got a high Model accuracy of 0.86 and an f1- score of 0.61. We plotted the precision and recall curves to verify the model performance because our data set was imbalanced, and we got a high AU PRC value of 0.63 for the random forest model.
 
-**Model Precision Recall F1-Score Accuracy AU PRC**
-
-**------------------------------------------------------------------------------------**
-
-Random Forest 0.70 0.43 0.61 0.86 0.63
-
-Gradient Boosting 0.63 0.41 0.57 0.85 0.57
-
-XGBoost 0.53 0.63 0.58 0.83 0.59
+|Model| Precision| Recall |F1-Score| Accuracy |AU PRC|
+|:-------|:---------|:------|:--------|:--------|:-------|
+|Random Forest|0.70| 0.43 |0.61| 0.86 |0.63|
+|Gradient Boosting |0.63 |0.41| 0.57| 0.85 |0.57|
+|XGBoost |0.53 |0.63| 0.58| 0.83 |0.59|
 
 _Table 4: Models Performance comparison 1_
 
 We used the SMOTE oversampling method, in which we created synthetic data points to balance the data set. After oversampling, the dataset became balanced, and we were able to obtain the following results using the models as shown in Table 5. All the models performed better with a balanced dataset. We plot the ROC curve to verify the model performance of a balanced dataset, and we got the model accuracy as 0.91 and AU ROC value as 0.96 for the random forest.
 
-**Model Precision Recall F1-Score Accuracy AU ROC**
-
-**------------------------------------------------------------------------------------**
-
-RandomForest\_SMOTE 0.97 0.84 0.90 0.91 0.96
-
-Gradient\_Boosting\_SMOTE 0.98 0.78 0.87 0.88 0.94
-
-XGBoost\_SMOTE 0.96 0.85 0.90 0.91 0.94
+|**Model |Precision |Recall |F1-Score| Accuracy |AU ROC**|
+|:-------|:---------|:------|:-------|:---------|:--------|
+|RandomForest_SMOTE |0.97 |0.84 |0.90 |0.91| 0.96|
+|Gradient_Boosting_SMOTE| 0.98 |0.78 |0.87| 0.88| 0.94|
+|XGBoost_SMOTE |0.96| 0.85 |0.90 |0.91 |0.94|
 
 _Table 5: Models Performance comparison 2_
 
