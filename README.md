@@ -11,22 +11,20 @@
 2. [Objectives](#objectives)
 
 3. [Preparing Dataset](#preparing-dataset)
-
-  1. [Data source](#data-source)
-  2. [Data collection](#data-collection)
-  3. [Data description](#data-description)
-  4. [Data understanding](#data-understanding)
-  5. [Data preparation](#data-preparation)
-  6. [Data transformation](#data-transformation)
-  7. [Feature engineering](#feature-engineering)
+    1. [Data source](#data-source)
+    2. [Data collection](#data-collection)
+    3. [Data description](#data-description)
+    4. [Data understanding](#data-understanding)
+    5. [Data preparation](#data-preparation)
+    6. [Data transformation](#data-transformation)
+    7. [Feature engineering](#feature-engineering)
 
 4. [Methodology](#methodology)
-
-  1. [Random forest](#random-forest)
-  2. [Gradient boosting](#gradient-boosting)
-  3. [XGBoost](#xgboost)
-  4. [Important features](#important-features)
-  5. [Oversampling with SMOTE](#oversampling-with-smote)
+    1. [Random forest](#random-forest)
+    2. [Gradient boosting](#gradient-boosting)
+    3. [XGBoost](#xgboost)
+    4. [Important features](#important-features)
+    5. [Oversampling with SMOTE](#oversampling-with-smote)
 
 5. [Results and Analysis](#results-and-analysis)
 
