@@ -11,7 +11,7 @@ The outcome of this project will help in providing the key insights about the mo
     * category = HVAC, Painters, Plumbing, AutoRepair, Tires, TransmissionRepair, Flooring, Handyman
 
 ### Steps to Execute the code for Data Collection through IDE(Pycharm)
-* use git clone https://vadd0000@bitbucket.org/vadd0000/yelp.git command from git bash to copy the code repository into your system
+* use git clone https://github.com/PurushothamVadde/DSA5900_Practicum.git command from git bash to copy the code repository into your system
 	* #### Part1: Extracting Business URL	
 		1. Navigate to Data_HTML_Tags/Input.json set the category and city values that you are looking to get business reviews(city = Oklahoma, category = HVAC).
 		2. Add the city and category folders in Data_Business_URL_City_and_Category_Wise/{city}/{category}.
@@ -28,7 +28,7 @@ The outcome of this project will help in providing the key insights about the mo
 		3. The customer reviews data is stored into Data_Business_Reviews folder
 		
 ### Steps to Execute the code for Data Collection through Jupyter Notebook
-* use git clone https://vadd0000@bitbucket.org/vadd0000/yelp.git command from git bash to copy the code repository into your system
+* use git clone https://github.com/PurushothamVadde/DSA5900_Practicum.git  command from git bash to copy the code repository into your system
 	* #### Part1: Extracting Business URL	
 		1. Navigate to Data_HTML_Tags/Input.json set the category and city values that you are looking to get business reviews(city = Oklahoma, category = HVAC).
 		2. Add the city and category folders in Data_Business_URL_City_and_Category_Wise/{city}/{category}.
