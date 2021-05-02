@@ -137,18 +137,19 @@ def Customer_Review_Data(Review_div,html_tags):
 
 def Customer_Data(link,html_tags,Business_Details,Data_Frame, city, category):
     
-    # iterating through the each page with business reviews for business each page using the incrementer 20 
-    # each page will have 20 reviews
+    # iterating through the each page with business reviews for business each page using the incrementer 10 
+    # each page will have 10 reviews
     
     for i in range(0,int(Business_Details[2]),10):      
         # initiating the webdriver. Parameter includes the path of the webdriver. 
-        driver = webdriver.Chrome('../chromedriver/chromedriver.exe')
-        
+        driver = webdriver.Chrome('../chromedriver/chromedriver.exe') 
         if('?osq') in link:
             current_url = link+'&start='+str(i)
         else: 
             current_url = link+'?start='+str(i)
             
+        print(current_url)
+        driver.get(current_url) 
         # this is just to ensure that the page is loaded 
         time.sleep(2)  
         html = driver.page_source 
@@ -170,6 +171,7 @@ def Customer_Data(link,html_tags,Business_Details,Data_Frame, city, category):
                                             'Business_Photos_Count',
                                             'Business_Timings',
                                             'Business_Claim_status',
+                                            'Business_URL',
                                             'Customer_Name', 
                                             'Customer_Friends_count',
                                             'Customer_Reviews_count',
@@ -194,6 +196,7 @@ def Customer_Data(link,html_tags,Business_Details,Data_Frame, city, category):
             # calling Customer Review Data Function
             Customer_Review_Details = Customer_Review_Data(div,html_tags)
             
+            
             # writing the Business and Customer Review details to a Data frame 
             data =[{'Business_Name':Business_Details[0],
                         'Business_Address':Business_Details[1],
@@ -202,6 +205,7 @@ def Customer_Data(link,html_tags,Business_Details,Data_Frame, city, category):
                         'Business_Photos_Count':Business_Details[4],
                         'Business_Timings':Business_Details[5],
                         'Business_Claim_status':Business_Details[6],
+                        'Business_URL' : Business_Details[7],
                         'Customer_Name':Customer_Review_Details[0], 
                         'Customer_Friends_count':Customer_Review_Details[1],
                         'Customer_Reviews_count':Customer_Review_Details[2],
@@ -219,7 +223,7 @@ def Customer_Data(link,html_tags,Business_Details,Data_Frame, city, category):
                         'Business_response_Date':Customer_Review_Details[14], 
                         'Business_Response_for_Review':Customer_Review_Details[15],
                         'Business_Response':Customer_Review_Details[16]}]
-            
+
             # appending data for each review div 
             Data_Frame = Data_Frame.append(data, ignore_index=True,sort=False)
         
@@ -287,6 +291,7 @@ def Business_Data(soup, html_tags, link, Data_Frame, city, category):
                         Business_Photos_Count,
                         Business_Timings,
                         Business_Claim_status,
+                        Business_URL   
                        ]
 
     # Iterating each page of business to get reviews and customer html_tags with Customer Data function
@@ -316,8 +321,8 @@ if __name__== '__main__':
 
     # creating  a Data frame to save data
     Data_Frame =pd.DataFrame(columns= [ 'Business_Name', 'Business_Address', 'Business_ReviewCount', 'Business_Rating',
-                                        'Business_Photos_Count', 'Business_Timings', 'Business_Claim_status','Customer_Name', 
-                                        'Customer_Friends_count', 'Customer_Reviews_count', 'Customer_Photos_count', 'Customer_Elite',
+                                        'Business_Photos_Count', 'Business_Timings', 'Business_Claim_status', 'Business_URL',
+                                        'Customer_Name','Customer_Friends_count', 'Customer_Reviews_count', 'Customer_Photos_count', 'Customer_Elite',
                                         'Customer_Elite_Year', 'Customer_Rating', 'Customer_Review', 'Customer_Review_Date', 
                                         'Customer_Review_Uploaded_Photos', 'Customer_Review_Useful', 'Customer_Review_Funny', 
                                         'Customer_Review_Cool', 'Business_response_By', 'Business_response_Date', 

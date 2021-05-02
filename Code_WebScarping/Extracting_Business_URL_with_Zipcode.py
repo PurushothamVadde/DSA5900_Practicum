@@ -78,13 +78,17 @@ def main(base_url,main_url,current_zipcode, city, category):
     # Extracting all page urls with business list
     for i in range(1, 6):       
         #calling the function to extract the url pages with business url
-        links = Extracting_URL(main_url, links)       
+        links = Extracting_URL(main_url, links)
         # setting the last url of the list from the result of above function as main_url
-        main_url = links[-1]
-                 
-    for link in links:
-        #calling the function to extract the business url from the function
-        Business_links=Extracting_Business_URL(link, base_url, Business_links)
+        if len(links)>0:
+            main_url = links[-1]
+            
+    if len(links)>0:             
+        for link in links:
+            #calling the function to extract the business url from the function
+            Business_links=Extracting_Business_URL(link, base_url, Business_links)
+    else:
+        Business_links=Extracting_Business_URL(main_url, base_url, Business_links)
         
     # Saving all the Business URL to csv file
     df = pd.DataFrame({'Business_links': Business_links})
