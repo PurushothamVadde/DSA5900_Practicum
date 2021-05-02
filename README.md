@@ -124,7 +124,7 @@ The customer rating reflects the customer&#39;s opinion of the business. Whether
 
 _Fig 5: Business response rate based on Customer review rating._
 
-###**3.5 Feature engineering:**
+### **3.5 Feature engineering:**
 
 #### **3.5.1 Customer review :**
 
