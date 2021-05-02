@@ -5,8 +5,8 @@
 
 
 ## Table of Content
-- [Business Understanding](#business-understanding)
-[1. Introduction](#introduction)
+
+- [Introduction](#introduction)
 
 2. [Objectives](#objectives)
 
