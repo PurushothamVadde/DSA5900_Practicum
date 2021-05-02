@@ -6,7 +6,7 @@
 
 ## Table of Content
 
-- [Introduction](#introduction)
+[1. Introduction](#introduction)
 
 2. [Objectives](#objectives)
 
@@ -31,7 +31,7 @@
 
 6. [References](#refernces)
 
-**1. Introduction:**
+**1. Introduction**
 
 Nowadays, most online users rely on online reviews of a business or product before making a decision. Online reviews are playing a central role in decision-making. According to Forbes, 90% of the user will read the reviews of a business to determine the quality, 82% of Yelp users said they typically visit Yelp because they intend to buy a product or service. 74% of users say that the positive reviews make them trust a local business more[1]. The Internet is filled with many reviews, and there are thousands of reviews available for each business. People prefer a business with good reviews compare to the other. All Web applications allow users to write a review of their experience with their respective businesses to know about their service. There are many applications, especially for business reviews, such as Yelp, Google reviews, Facebook, Etc.
 
