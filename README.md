@@ -52,7 +52,7 @@ Selenium web driver is a framework used to test web applications. Using the sele
 
 The Beautiful soup is a Python library used to extract data from HTML. The HTML raw data extracted from the Yelp Website parsed using the beautiful soup, and the required Business Reviews data extracted from the HTML page using the Beautiful soup inbuilt functions. and to get the most data, we look for businesses based on zip codes in Seattle, so we can get the most business data.We also maintained a separate HTML tags file so that code maintenance would be simple if the HTML tags changed in the future.
 
-### **3.3 Data description**** :**
+### **3.3 Data description:**** 
 
 Our final Data set consists of Business reviews from Seattle City in eight different categories such as (Auto Repair, Flooring, Handyman, HVAC, Painters, Plumbing, Tires, Transmission Repair). A total of 97584 customer reviews have been collected. We have collected the 24 features for each business review. Please see Appendix 1 for a complete list of business features that we have collected for each review. These features are collected in 3 levels, such as business-related features, Customer-related features, and business owners&#39; responses.
 
@@ -248,7 +248,7 @@ _Fig 7: Performance Metric Plots for Gradient Boosting_
 
 XGBoost has similar behavior to a decision tree in that each tree is split based on a specific range of values in different columns, but unlike decision trees, each node is given a weight. On each iteration a new tree is created, and new node weights are assigned based on similarity score and gain. For each tree, the training examples with the biggest error from the previous tree are given extra attention so that the next tree will optimize more for these training examples, this is the boosting part of the algorithm[6].
 
-####**4.3.1 Tuning parameters of XGBoost:**
+#### **4.3.1 Tuning parameters of XGBoost:**
 
 **colsample_bytree:** The number of columns that must be considered in the model is represented by this parameter. The range of values is 0 to 1. If colsample\_bytree = 0.5, half of the columns are considered when constructing a tree.
 
