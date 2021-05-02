@@ -52,7 +52,7 @@ Selenium web driver is a framework used to test web applications. Using the sele
 
 The Beautiful soup is a Python library used to extract data from HTML. The HTML raw data extracted from the Yelp Website parsed using the beautiful soup, and the required Business Reviews data extracted from the HTML page using the Beautiful soup inbuilt functions. and to get the most data, we look for businesses based on zip codes in Seattle, so we can get the most business data.We also maintained a separate HTML tags file so that code maintenance would be simple if the HTML tags changed in the future.
 
-### **3.3 Data description:**** 
+### **3.3 Data description:**
 
 Our final Data set consists of Business reviews from Seattle City in eight different categories such as (Auto Repair, Flooring, Handyman, HVAC, Painters, Plumbing, Tires, Transmission Repair). A total of 97584 customer reviews have been collected. We have collected the 24 features for each business review. Please see Appendix 1 for a complete list of business features that we have collected for each review. These features are collected in 3 levels, such as business-related features, Customer-related features, and business owners&#39; responses.
 
