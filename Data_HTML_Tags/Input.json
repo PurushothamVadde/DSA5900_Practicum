@@ -1,0 +1,7 @@
+{
+    "_comments" : "# city = Oklahoma, Seattle, LosAngeles, NewYork, Miami, Palmbeach, Test",
+    "_comments1" : "category = HVAC, Painters, Plumbing, AutoRepair, Tires, TransmissionRepair, Flooring, Handyman, Test",
+    "city" :  "Test",
+    "category" : "Test"
+
+}
