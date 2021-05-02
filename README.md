@@ -40,7 +40,7 @@ The yelp search results are made with repeated or duplicated businesses to restr
 
 As previously mentioned, data collection through web scraping poses a lot of technical challenges. We used the Data collection architecture shown in Fig 1 to solve these challenges. We used the selenium web driver to extract the HTML raw data and the beautiful soup to collect the business reviews data from the HTML, as shown in Fig 1.
 
-![](RackMultipart20210502-4-8sl7tn_html_f5ce28a6ffb4686.jpg)
+![Data Collection Architecture](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Data%20Collection%201.JPG)
 
 _Fig 1: Data collection architecture_
 
@@ -58,29 +58,20 @@ Our final Data set consists of Business reviews from Seattle City in eight diffe
 
 Based on the data we collected, we found that 17804 customer reviews received a business response of 18.24 percent, and 79780 customer reviews received no business response of 81.75 percent we can see the same data in the Fig 2.
 
-![](RackMultipart20210502-4-8sl7tn_html_4b90680b77551694.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Total_Business_Reviews.png)
 
 _Fig 2: Total Reviews VS Business Response_
 
-Category 0 1 Business Response Rate
-
--------------------------------------------------------------
-
-AutoRepair 23695 6203 20.74721
-
-Flooring 10696 1833 14.63006
-
-HVAC 8415 1443 14.63786
-
-Handyman 11772 3580 23.31944
-
-Painters 2448 292 10.65693
-
-Plumbing 2748 356 11.46907
-
-Tires 15818 2671 14.44643
-
-TransmissionRepair 4188 1426 25.40078
+|Category           |        0  |       1 |       Business Response Rate|
+|:-------           |:--------- |:--------|:----------------------------|
+|AutoRepair         |23695      |6203     |20.74721                     |
+|Flooring           | 10696     | 1833    | 14.63006                    |
+|HVAC               |8415       | 1443    |14.63786                     |
+|Handyman           |11772      |3580     |23.31944                     |
+|Painters           |2448       |292      | 10.65693                    |
+|Plumbing           |2748       |356      | 11.46907                    |
+|Tires              |15818      |2671     |14.44643                     |
+|TransmissionRepair | 4188      |1426     | 25.40078                    |
 
 _Table 1 : Business Response category wise_
 
@@ -88,13 +79,13 @@ Table 1 shows the business response rate for each category based on the collecte
 
 **3.4 Data understanding:**
 
-**3.4.1 Business review&#39;s count:**
+**3.4.1 Business reviews count:**
 
 In general, businesses that are active on social media are more likely to receive more reviews. Additionally, businesses that are active on social media have a higher response rate for customer reviews. From our dataset we observe the similar behavior where the businesses with more reviews count are more likely to respond to customer reviews than businesses with fewer reviews.
 
 The Mean and Median of business review counts are high for businesses that respond to customer reviews more frequently, as shown in Fig 3. We can see that those actively responding have a median of 104 reviews and a mean of close to 200. So, as shown in Fig 3, the Business Response Rate is higher for businesses with more reviews than for businesses with fewer reviews.
 
-![](RackMultipart20210502-4-8sl7tn_html_fe0dc87f73acea7c.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Business_Review_Count.png)
 
 _Fig 3: Business Response VS Business Review Count_
 
@@ -110,17 +101,18 @@ Null Hypothesis = Means are same
 
 Alternative Hypothesis = means are not same
 
-Class0 sample size n1=79780 Class1 sample size n2= 17804
-
-Mean of class0 u1= 4 Mean of class1 u2 = 3.8
-
-Standard Deviation of class 0 s1= 0.8757 Standard Deviation of class 1 s2 = 0.7637
+Class0 sample size n1=79780 
+Class1 sample size n2= 17804
+Mean of class0 u1= 4     
+Mean of class1 u2 = 3.8
+Standard Deviation of class 0 s1= 0.8757    
+Standard Deviation of class 1 s2 = 0.7637
 
 With size, mean and standard deviation of the above two classes and we got the t0 statistic as 30.7253. When we Calculated the p-value based on the t0 statistic with 95 percent confidence, we get a p.value of 0.00001, which is less than 0.05.
 
 As a result, we can reject the null hypothesis that both means are equal and conclude that the mean for the business responding class is lower, implying that businesses with low ratings respond more than businesses with high ratings.
 
-![](RackMultipart20210502-4-8sl7tn_html_684ed8e334b69621.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/business%20Rating.png)
 
 _Fig 4: Business Response VS Business Rating_
 
@@ -128,7 +120,7 @@ _Fig 4: Business Response VS Business Rating_
 
 The customer rating reflects the customer&#39;s opinion of the business. Whether a customer is satisfied with a company&#39;s service, the rating will be favorable and high; if the customer is dissatisfied with the service, he will give the business a low rating and a negative review. We can see in Fig 5 that the business response rate increases as the customer rating score decreases and decreases as the rating increases, implying that customers with lower ratings are more likely to receive a business response. The business response rate for Rating 1 is 25.31 percent whereas for rating 5 is 15.72 percent.
 
-![](RackMultipart20210502-4-8sl7tn_html_ca3d2e911252b065.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Customer_Rating.png)
 
 _Fig 5: Business response rate based on Customer review rating._
 
@@ -148,15 +140,11 @@ We used Textblob to understand the sentiment of customer reviews. TextBlob is a 
 
 **Sentiment score:** Sentiment Score feature is created based on the polarity score. The Polarity score with greater than zero has set to Positive sentiment reviews. Equal to zero has set to Neutral, and less than zero has set to Negative reviews.
 
-Sentiment\_Score 0 1 Business Response Rate
-
--------------------------------------------------------------
-
-Negative 8775 2512 22.25569
-
-Neutral 653 171 20.75243
-
-Positive 70352 15121 17.69097
+|Sentiment_Score |0 |1| Business Response Rate|
+|:----------------|--|--|-----------------------|
+|Negative| 8775 |2512| 22.25569|
+|Neutral |653 |171 |20.75243|
+|Positive| 70352 |15121| 17.69097|
 
 _Table 2: Sentiment Score VS Business Response_
 
@@ -226,7 +214,7 @@ From Fig 6 we can see the plots for AU ROC curve, AU PR Curve, F1-score VS Thres
 
 In the case of an unbalanced data collection, we must consider the AU PR Curve, a precision vs recall curve. In plot 2, the region under the curve for Precision and Recall is 0.6399. We can also see in plot 3 that keeping the predicting threshold at 0.27 results in the highest f1 score of 0.613.
 
-![](RackMultipart20210502-4-8sl7tn_html_67f27f2ce2592770.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Plots%20for%20Random%20Forest.png)
 
 _Fig 6 Performance Metric Plots for Random Forest_
 
@@ -252,7 +240,7 @@ Using GridsearchCV and cross-fold validation as ten and scoring metric as accura
 
 We need to see the PR curve to evaluate the model trained with an imbalanced data set, as we discussed earlier. We can see that the area under the curve for PR Curve is 0.57, and we can also see in plot 3 in Fig 7 that the maximum f1 score for the Gradient Boosting model is 0.56 at the threshold cutoff of 0.019.
 
-![](RackMultipart20210502-4-8sl7tn_html_a4c168abf48ac727.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/Plots%20for%20Gradient%20Boosting.png)
 
 _Fig 7: Performance Metric Plots for Gradient Boosting_
 
@@ -272,7 +260,7 @@ XGBoost has similar behavior to a decision tree in that each tree is split based
 
 **4.3.2 XGBoost model performance:**
 
-![](RackMultipart20210502-4-8sl7tn_html_a2a212a3f89b574c.png)
+![](https://github.com/PurushothamVadde/DSA5900_Practicum/blob/main/images/XgBoost%20Model%20Performance.png)
 
 _Fig 8: XGBoost Model Performance_
 
